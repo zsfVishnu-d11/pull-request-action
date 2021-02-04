@@ -91,8 +91,9 @@ def create_pull_request(
     params = {"base": target, "head": source, "state": "open"}
     data = {"base": target, "head": source, "body": body}
     print("Params for checking if pull request exists: %s" % params)
+    print("ZSF OVER HERE")
     response = requests.get(PULLS_URL, params=params)
-
+    print("ZSF OVER HERE TOO")
     # Case 1: 404 might warrant needing a token
     if response.status_code == 404:
         response = requests.get(PULLS_URL, params=params, headers=HEADERS)
