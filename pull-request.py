@@ -333,6 +333,7 @@ def main():
 
 if __name__ == "__main__":
     print("==========================================================================")
+    print("ZSF OVER HERE FIRST")
     print("START: Running Pull Request on Branch Update Action!")
     main()
     print("==========================================================================")
